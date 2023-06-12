@@ -1,0 +1,126 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #e3f4f7, #8b96eb);
+    /*#e3f4f7, #5688eb        #e3f4f7, #8b96eb)*/
+    background-size: cover;
+  }
+  .main{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 440px;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .main h1{
+    text-align: center;
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid silver;
+    margin-bottom: 30px;
+  
+  }
+  
+  .main form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  form .txt_field{
+    position: relative;
+    margin: 30px 0;
+    
+  }
+  input[type="password"]{
+  position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .txt_field input,input[type="password"],.desc,.sel{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+   
+  }
+  
+  .txt_field label{
+    top: 50%;
+    left: 5px;
+    color: blue;
+    font-size: 16px;
+  }
+  
+  
+  input[type="submit"] {
+    width: 340px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 650;
+    border: none;
+    border-radius: 3px;
+    background-color: #8aaaeb;
+     background: linear-gradient(to bottom, #8aaaeb, #5688eb);
+     /*#8aaaeb, #5688eb);#8aaaeb*/
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255,0.3);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,0.3);
+    margin-bottom: 30px;
+  
+  }
+  
+
+  
+input[type="submit"]:hover {
+  background: #8aaaeb;
+  /*  #8aaaeb, #8b96eb);*/
+  background-image: -webkit-linear-gradient(top, #8aaaeb, #8b96eb);
+  background-image: -moz-linear-gradient(top, #8aaaeb, #8b96eb);
+  background-image: -ms-linear-gradient(top, #8aaaeb, #8b96eb);
+  background-image: -o-linear-gradient(top, #8aaaeb, #8b96eb);
+  background-image: linear-gradient(to bottom, #8aaaeb, #8b96eb);
+  text-decoration: none;
+  transition: .5s;
+}
+
+  
+  label{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-style: italic;
+  }
+  input[type="text"],input[type="password"], .desc,input[type="date"],.sel{
+    width: 340px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+      top: 50%;
+    outline: 0;
+    padding: 7px;
+    
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0,0.3);
+  }
+  input[type="password"]{
+    width: 340px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+      top: 50%;
+    outline: 0;
+    padding: 0 7px;  
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0,0.3);
+  }
+  
+  
+  
+  

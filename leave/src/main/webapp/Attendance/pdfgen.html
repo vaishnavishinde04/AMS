@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert HTML to PDF using html2pdf</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div id="myElement">
+        <h1>Hello World!</h1>
+        <p>This is some sample text.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var element = document.getElementById('myElement');
+
+        html2pdf(element, {
+            filename: 'myfile.pdf',
+            margin: [0, 0, 0, 0],
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { dpi: 192, letterRendering: true },
+            jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
+        }).then(function() {
+            // redirect to the new HTML file
+            window.location.href = 'http://localhost:8081/leave/succSub.html';
+        });
+        
+        
+        
+    </script>
+</body>
+</html>
